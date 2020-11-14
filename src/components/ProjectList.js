@@ -15,9 +15,18 @@ const ProjectList = () => {
   }, [])
 
   // console.log("projects", projects)
-  console.log("projects in projectlist", projects)
+  // console.log("projects in projectlist", projects)
+
+  const renderedList = projects.map(project => {
+      return (
+        <article key={project.id}>
+          <h2>{project.title.rendered}</h2>
+          <figure><img src={project.acf.screenshot.sizes.medium}/></figure>
+        </article>
+      )
+    })
   return(
-    <> ProjectList </>
+    <> {renderedList} </>
   )
 }
 

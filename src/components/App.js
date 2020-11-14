@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <> 
-    <ProjectList /> 
+    {/* <ProjectList />  */}
     <PrintList />
     </>
   )
