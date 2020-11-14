@@ -12,8 +12,8 @@ const App = () => {
 
   return (
     <> 
-    <ProjectList /> 
-    {/* <PrintList /> */}
+    {/* <ProjectList />  */}
+    <PrintList />
     </>
   )
 }

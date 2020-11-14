@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import PrintItem from './PrintItem';
 
 const PrintList = () => {
   const [prints, setPrints] = useState([]);
+  const [selectedPrint, setSelectedPrint] = useState(null)
 
   useEffect(() => {
     const getPrints = async () => {
@@ -16,19 +18,15 @@ const PrintList = () => {
 
   const renderedList = prints.map(print => {
     return (
-      <article key={print.id}>
-        <h2> {print.title.rendered} </h2>
-        <figure>
-          <img src={print.acf.image.sizes.medium} />
-        </figure>
-        {/* <p className="print-content">
-          {print.acf.description}
-        </p> */}
-      </article>
+      <PrintItem
+      print={print}
+      onPrintSelect={setSelectedPrint}
+      key={print.id}
+      />
     )
   })
 
-  console.log("prints in PrintList", prints)
+  // console.log("prints in PrintList", prints)
   return (
     <>
     {renderedList}
