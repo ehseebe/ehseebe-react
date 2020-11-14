@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Document, Page } from 'react-pdf'
 import ProjectList from "./ProjectList";
 import PrintList from "./PrintList";
+import Resume from './Resume';
 import Home from './Home';
 import "./App.css";
-import Resume from './alyssa-beaton-tanguay-cv.pdf';
 
 const App = () => {
   return (
@@ -43,9 +42,7 @@ const App = () => {
             <PrintList />
           </Route>
           <Route path="/resume">
-          <Document file={Resume}>
-          <Page pageNumber={1} />
-          </Document>
+            <Resume />
           </Route>
         </Switch>
       </div>
