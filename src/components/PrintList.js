@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PrintItem from './PrintItem';
+import PrintDetail from './PrintDetail';
 
 const PrintList = () => {
   const [prints, setPrints] = useState([]);
@@ -30,6 +31,7 @@ const PrintList = () => {
   return (
     <>
     {renderedList}
+    <PrintDetail print={selectedPrint} />
     </>
   )
 }
