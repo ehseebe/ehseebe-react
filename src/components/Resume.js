@@ -1,5 +1,5 @@
 import React from 'react';
-import PDF from './alyssa-beaton-tanguay-cv.pdf';
+import PDF from './alyssabt-resume.pdf';
 
 const Resume = () => {
   return (
