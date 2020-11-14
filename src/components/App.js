@@ -1,23 +1,37 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Document, Page } from 'react-pdf'
 import ProjectList from "./ProjectList";
 import PrintList from "./PrintList";
+import Home from './Home';
 import "./App.css";
+import Resume from './alyssa-beaton-tanguay-cv.pdf';
 
 const App = () => {
   return (
     <Router>
       <div>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
+          <figure className="logo">
+            <a href="/">
+        <img src="/images/nav/alyssa-bt-logo-grey.png" />
+        </a>
+        </figure>
+          <ul className="nav-items">
+            <li className="nav-item">
+              <Link to="/resume">
+              <img src="/images/nav/alyssa-bt-resume.png" />
+              </Link>
             </li>
-            <li>
-              <Link to="/projects">Projects</Link>
+            <li className="nav-item">
+              <Link to="/projects">
+                <img src="/images/nav/alyssa-bt-projects.png" />
+              </Link>
             </li>
-            <li>
-              <Link to="/print">Print</Link>
+            <li className="nav-item">
+              <Link to="/print">
+              <img src="/images/nav/alyssa-bt-print.png" />
+              </Link>
             </li>
           </ul>
         </nav>
@@ -28,7 +42,11 @@ const App = () => {
           <Route path="/print">
             <PrintList />
           </Route>
-          <Route path="/"></Route>
+          <Route path="/resume">
+          <Document file={Resume}>
+          <Page pageNumber={1} />
+          </Document>
+          </Route>
         </Switch>
       </div>
     </Router>
