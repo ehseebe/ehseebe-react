@@ -5,6 +5,7 @@
 
 .project-list {
   display: flex;
+  Overflow-x:scroll;
 }
 
 .project-item__thumbnail img {
