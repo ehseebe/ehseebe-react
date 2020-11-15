@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ProjectDetail from "./ProjectDetail";
 import ProjectItem from "./ProjectItem";
+import './Projects.css';
 
 const ProjectList = () => {
   const [projects, setProjects] = useState([]);
@@ -31,12 +32,12 @@ const ProjectList = () => {
     );
   });
   return (
-    <>
-    <div className="ui relaxed divided list">
-      {renderedList}
-    </div>
+    <section className="projects">
     <ProjectDetail project={selectedProject} />
-    </>
+    <aside className="project-list">
+      {renderedList}
+    </aside>
+    </section>
   );
 };
 
