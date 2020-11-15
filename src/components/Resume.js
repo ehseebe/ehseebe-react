@@ -3,7 +3,7 @@ import PDF from './alyssabt-resume.pdf';
 
 const Resume = () => {
   return (
-    <embed
+    <iframe className="ui-embed"
     src={PDF + "#toolbar=0"}
     type="application/pdf"
     height={650}

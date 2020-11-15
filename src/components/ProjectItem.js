@@ -4,13 +4,13 @@ const ProjectItem = ({ project, onProjectSelect }) => {
   return (
     <>
       <article
-        className="project-item"
+        className="project-item item"
         key={project.id}
         onClick={() => onProjectSelect(project)}
       >
-        <h2>{project.title.rendered}</h2>
-        <figure>
-          <img src={project.acf.screenshot.sizes.medium} />
+        <figure className="content">
+          <h2 className="header">{project.title.rendered}</h2>
+          <img className="ui-image" src={project.acf.screenshot.sizes.medium} />
         </figure>
       </article>
     </>

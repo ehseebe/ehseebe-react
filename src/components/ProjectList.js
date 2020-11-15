@@ -32,8 +32,10 @@ const ProjectList = () => {
   });
   return (
     <>
+    <div className="ui relaxed divided list">
       {renderedList}
-      <ProjectDetail project={selectedProject} />
+    </div>
+    <ProjectDetail project={selectedProject} />
     </>
   );
 };

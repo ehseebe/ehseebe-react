@@ -3,23 +3,34 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  
+  /* background-color: black;
+  color: white; */
 }
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-height: 7em;
 }
 
 .nav-items {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  margin: 0 1em 0 1em;
+  /* align-items: center; */
 }
 
 .nav-item {
   list-style: none;
+  margin: 0 0 1em 1em;
+}
+
+.nav-item img {
+  max-width: 10em;
+  max-height: 2.5em;
 }
