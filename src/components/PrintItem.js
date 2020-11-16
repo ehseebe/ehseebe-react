@@ -6,11 +6,12 @@ const PrintItem = ({ print }) => {
 
   return (
     <article className="print-item" key={print.id} onClick={() => setSelectedPrint(print)}>
-    {/* <h2> {print.title.rendered} </h2> */}
     <figure className="print-item__thumbnail">
       <img src={print.acf.image.sizes.large} />
     </figure>
-    <p className="print-item__description">{print.acf.description}</p>
+    <p className="print-item__description">
+    <h3 className="print-item__header"> {print.title.rendered} </h3>
+    {print.acf.description}</p>
   </article>
   )
 }

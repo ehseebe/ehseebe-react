@@ -1,7 +1,7 @@
 * {
   font-family: 'Rubik', sans-serif;
   width: 100%;
-  color: rgb(129, 129, 129)
+  color: #39444A;
 }
 
 body {
@@ -50,10 +50,10 @@ nav {
 
 .nav-item a {
   font-family: tenby-seven,sans-serif;
-  font-weight: 300;
+  font-weight: 900;
   font-style: normal;
   letter-spacing: 2px;
-  color: #d8b8ff;
+  color: #E86311;
   font-size: 1.5em;
   font-weight: bold;
   display: flex;
@@ -64,7 +64,7 @@ nav {
 .nav-item :active {
   font-weight: 900;
   color: white;
-  background-color: #d8b8ff;
+  background-color: #FF8F13;
 }
 
 @media (max-width: 415px) {
