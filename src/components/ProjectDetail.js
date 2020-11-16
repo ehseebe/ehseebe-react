@@ -1,5 +1,5 @@
 import React from "react";
-import './Projects.css';
+import "./Projects.css";
 
 const ProjectDetail = ({ project }) => {
   if (!project) {
@@ -12,9 +12,14 @@ const ProjectDetail = ({ project }) => {
         <img src={project.acf.screenshot.sizes.large} />
       </figure>
       <div className="project-detail__content">
-      <h1>{project.title.rendered}</h1>
-      <p className="project-detail__description">{project.acf.description}</p>
-      <p className="project-detail__stack">{project.acf.stack}</p>
+        <h1 className="project-detail__content-header">
+          {project.title.rendered}
+        </h1>
+        <p className="project-detail__description">
+          {project.acf.description} <br /> <br />
+          {/* <h3 className="project-detail__content-header">stack</h3> */}
+          Tech stack: {project.acf.stack}
+        </p>
       </div>
     </article>
   );
