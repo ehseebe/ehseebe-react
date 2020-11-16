@@ -18,7 +18,7 @@ const Resume = () => {
     console.log(cv)
     return(
       <figure className="resume-img" key={cv.id}>
-      <img src={cv.acf.resume.sizes.large} />
+      <img src={cv.acf.resume.url} />
       </figure>
     )
   })
