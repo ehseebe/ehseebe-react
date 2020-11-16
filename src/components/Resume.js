@@ -15,6 +15,7 @@ const Resume = () => {
   }, [])
 
   const renderedResume = resume.map(cv => {
+    console.log(cv)
     return(
       <figure className="resume-img" key={cv.id}>
       <img src={cv.acf.resume.sizes.large} />
@@ -22,7 +23,6 @@ const Resume = () => {
     )
   })
 
-  //console.log("resume", resume[0].acf.sizes.large)
   return (
     <section className="resume">
       {renderedResume}

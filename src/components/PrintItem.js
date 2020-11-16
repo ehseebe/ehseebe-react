@@ -10,7 +10,6 @@ const PrintItem = ({ print }) => {
       <img src={print.acf.image.sizes.large} />
     </figure>
     <p className="print-item__description">
-    <h3 className="print-item__header"> {print.title.rendered} </h3>
     {print.acf.description}</p>
   </article>
   )
