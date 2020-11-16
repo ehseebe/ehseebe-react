@@ -9,7 +9,7 @@ import "./App.css";
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="app-body">
         <nav>
           <figure className="logo">
             <Link to="/">
@@ -19,17 +19,17 @@ const App = () => {
           <ul className="nav-items">
             <li className="nav-item">
               <Link to="/resume">
-                <img src="/images/nav/alyssa-bt-resume.png" />
+                resume
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/projects">
-                <img src="/images/nav/alyssa-bt-projects.png" />
+                projects
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/print">
-                <img src="/images/nav/alyssa-bt-print.png" />
+                print
               </Link>
             </li>
           </ul>
