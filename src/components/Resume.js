@@ -1,14 +1,32 @@
-import React from 'react';
-import PDF from './alyssabt-resume.pdf';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import "./Resume.css";
+import { render } from 'react-dom';
 
 const Resume = () => {
+  const [resume, setResume] = useState([])
+
+  useEffect(() => {
+    const getResume = async () => {
+      const response = await axios.get("http://localhost:10013/wp-json/wp/v2/resume")
+    setResume(response.data)
+    }
+    getResume();
+  }, [])
+
+  const renderedResume = resume.map(cv => {
+    return(
+      <figure className="resume-img" key={cv.id}>
+      <img src={cv.acf.resume.sizes.large} />
+      </figure>
+    )
+  })
+
+  //console.log("resume", resume[0].acf.sizes.large)
   return (
-    <iframe className="ui-embed"
-    src={PDF + "#toolbar=0"}
-    type="application/pdf"
-    height={650}
-    width={500}
-  />
+    <section className="resume">
+      {renderedResume}
+    </section>
   )
 }
 
