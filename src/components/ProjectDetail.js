@@ -18,7 +18,6 @@ const ProjectDetail = ({ project }) => {
         <p className="project-detail__description">
           {project.acf.description}
           </p>
-          {/* <h3 className="project-detail__content-header">stack</h3> */}
           <h4 className="project-detail__content-header">
             Tools</h4>
             <p className="project-detail__description"> 

@@ -28,6 +28,7 @@ const ProjectList = () => {
         project={project}
         onProjectSelect={setSelectedProject}
         key={project.id}
+        id="project-item"
       />
     );
   });
