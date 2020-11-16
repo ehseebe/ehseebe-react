@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PrintItem from './PrintItem';
-import PrintDetail from './PrintDetail';
+import './Prints.css';
 
 const PrintList = () => {
   const [prints, setPrints] = useState([]);
-  const [selectedPrint, setSelectedPrint] = useState(null)
 
   useEffect(() => {
     const getPrints = async () => {
@@ -21,18 +20,15 @@ const PrintList = () => {
     return (
       <PrintItem
       print={print}
-      onPrintSelect={setSelectedPrint}
       key={print.id}
       />
     )
   })
 
-  // console.log("prints in PrintList", prints)
   return (
-    <>
+    <section className="prints">
     {renderedList}
-    <PrintDetail print={selectedPrint} />
-    </>
+    </section>
   )
 }
 

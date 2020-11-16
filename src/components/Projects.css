@@ -20,12 +20,6 @@
 
 .project-item__thumbnail {
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 30%; */
-  /* height: 30%; */
-  /* padding: 0; */
 }
 
 .project-item__thumbnail img {
@@ -94,4 +88,4 @@
   }
 }
 
-@media (max-width: 415px)
+/* @media (max-width: 415px) */
