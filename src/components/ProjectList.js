@@ -15,9 +15,13 @@ const ProjectList = () => {
       );
       setProjects(response.data);
     };
+  
     getProjects();
+    
     setSelectedProject(projects[projects.length - 1])//sets selected to vagary
-  }, [projects]);
+  }, []);
+
+
 
   const renderedList = projects.map((project) => {
     return (

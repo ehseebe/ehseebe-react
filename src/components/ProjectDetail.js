@@ -4,7 +4,7 @@ import "./Projects.css";
 const ProjectDetail = ({ project }) => {
   if (!project) {
     return (
-      <div className="ui segment">
+      <div className="ui segment project-detail">
         <div className="ui active inverted dimmer">
           <div className="ui text loader">Loading</div>
         </div>
@@ -16,7 +16,7 @@ const ProjectDetail = ({ project }) => {
   return (
     <article className="project-detail" id="project-detail">
       <figure className="project-detail__screenshot">
-        <img src={project.acf.screenshot.sizes.large} />
+        <img src={project.acf.screenshot.sizes.large} alt={project.acf.description}/>
       </figure>
       <div className="project-detail__content">
         <h1 className="project-detail__content-header">
