@@ -11,11 +11,13 @@ const App = () => {
     <Router>
       <div className="app-body">
         <nav>
-          <figure className="logo">
+          <span className="logo tracking-in-expand">
             <Link to="/">
-              <img src="/images/nav/alyssa-bt-logo-grey.png" />
+              alyssa <br/>
+              beaton <br/>
+              tanguay <br/>
             </Link>
-          </figure>
+          </span>
           <ul className="nav-items">
             <li className="nav-item">
               <Link to="/resume">

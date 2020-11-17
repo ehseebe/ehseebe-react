@@ -62,11 +62,12 @@
 }
 
 .project-detail__content-header {
-  font-family: tenby-seven,sans-serif;
-  font-weight: 900;
+  font-family: giulia,sans-serif;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 2px;
   padding: 0.2em;
+  color: #F43FA5;
 }
 
 .project-detail__description {

@@ -24,15 +24,22 @@ nav {
 }
 
 .logo {
-  /* height: 10vh; */
   width: 30%;
   margin: 0;
   box-sizing: border-box;
+line-height: 1.3em;
+}
+
+.logo a {
+  font-family: giulia,sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 2.5em;
+color: #F43FA5;
 }
 
 .logo img {
   width: 100%;
-  /* max-height: 10vh; */
 }
 
 .nav-items {
@@ -49,22 +56,53 @@ nav {
 }
 
 .nav-item a {
-  font-family: tenby-seven,sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-family: giulia,sans-serif;
+  font-weight: 300;
+  font-style: italic;
   letter-spacing: 2px;
-  color: #E86311;
+  color: #949498;
   font-size: 1.5em;
-  font-weight: bold;
   display: flex;
   justify-content: flex-end;
 }
 
 .nav-item :hover,
 .nav-item :active {
-  font-weight: 900;
   color: white;
-  background-color: #FF8F13;
+  background-color: #949498;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 2px;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 2px;
+  }
 }
 
 @media (max-width: 415px) {
