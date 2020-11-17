@@ -3,28 +3,9 @@ import axios from "axios";
 import "./Home.css";
 
 const Home = () => {
-  const [photos, setPhotos] = useState([]);
 
-  useEffect(() => {
-    const getPhotos = async () => {
-      const response = await axios.get(
-        "http://localhost:10013/wp-json/wp/v2/photography"
-      );
-      setPhotos(response.data);
-    };
-    getPhotos();
-  }, []);
 
-  console.log(photos);
-
-  const renderedPhotos = photos.map((photo) => {
-    return (
-      <figure className="photo-container" key={photo.id}>
-        <img className="fade-in" src={photo.acf.photo} alt={photo.title.rendered} />
-      </figure>
-    );
-  });
-  return <section className="homepage-photos">{renderedPhotos}</section>;
+  return (<section>bonjour/hi!</section>);
 };
 
 export default Home;
