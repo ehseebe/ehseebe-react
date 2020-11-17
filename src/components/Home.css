@@ -1,5 +1,6 @@
 .welcome-page {
   width: 90%;
+  height: 70vh;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -9,7 +10,7 @@
 .welcome-text {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 7em;
   height: 100%;
 }
