@@ -18,6 +18,7 @@ const App = () => {
               tanguay <br/>
             </Link>
           </span>
+          <span className="right-side">
           <ul className="nav-items">
             <li className="nav-item">
               <Link to="/resume">
@@ -35,6 +36,23 @@ const App = () => {
               </Link>
             </li>
           </ul>
+          <div className="social-icons">
+        <div className="icon">
+          <a href="https://www.github.com/ehseebe" target="_blank">
+            <img src="/images/footer/github.png" />
+          </a>
+        </div>
+
+        <div className="icon">
+          <a
+            href="https://www.linkedin.com/in/alyssa-beaton-tanguay-51a057138/"
+            target="_blank"
+          >
+            <img src="/images/footer/linkedin.png" />
+          </a>
+        </div>
+      </div>
+      </span>
         </nav>
         <Switch>
           <Route path="/projects">
@@ -52,25 +70,6 @@ const App = () => {
         </Switch>
       </div>
       <footer className="footer">
-      <div className="social-icons">
-        <div className="icon">
-          <a href="https://www.github.com/ehseebe" target="_blank">
-            <img src="/images/footer/github.png" />
-          </a>
-        </div>
-
-        <div className="icon">
-          <a
-            href="https://www.linkedin.com/in/alyssa-beaton-tanguay-51a057138/"
-            target="_blank"
-          >
-            <img src="/images/footer/linkedin.png" />
-          </a>
-        </div>
-      </div>
-      <div className="footer-text">
-        <p>Alyssa Beaton Tanguay 2020</p>
-        </div>
       </footer>
     </Router>
   );
