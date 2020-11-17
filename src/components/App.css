@@ -75,10 +75,10 @@ nav {
   justify-content: flex-end;
 }
 
-.nav-item :hover,
+.nav-item :hover ,
 .nav-item :active {
-  color: white;
-  background-color: #949498;
+  background-color: #f2a2bfab;
+  color: #39444A;
 }
 
 .footer {
@@ -102,6 +102,33 @@ nav {
   padding-right: 1em;
   width: 5em;
 }
+
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
 
 /* scroll to top arrow, CSS and component by Matthew Croak https://medium.com/better-programming/create-a-scroll-to-top-arrow-using-react-hooks-18586890fedc */
 .scrollTop {
