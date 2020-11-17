@@ -19,11 +19,14 @@ const ProjectDetail = ({ project }) => {
         <img src={project.acf.screenshot.sizes.large} alt={project.acf.description}/>
       </figure>
       <div className="project-detail__content">
-        <h1 className="project-detail__content-header">
+        <header className="project-detail__content-header">
+        <h1>
           {project.title.rendered}
         </h1>
+        <form method="GET" action={project.acf.link} className="project-detail__link"><button className="ui inverted pink button" type="submit">Check it out</button></form>
+        </header>
         <p className="project-detail__description">{project.acf.description}</p>
-        <h4 className="project-detail__content-header">Tools</h4>
+        <h4>Tools</h4>
         <p className="project-detail__description">{project.acf.stack}</p>
       </div>
     </article>
