@@ -15,7 +15,7 @@ const ProjectDetail = ({ project }) => {
 
   return (
     <article className="project-detail" id="project-detail">
-      <figure className="project-detail__screenshot">
+      <figure className="project-detail__screenshot fade-in">
         <img src={project.acf.screenshot.sizes.large} alt={project.acf.description}/>
       </figure>
       <div className="project-detail__content">

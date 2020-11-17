@@ -5,7 +5,7 @@ const ProjectItem = ({ project, onProjectSelect }) => {
   return (
     <a href="#project-detail">
       <article
-        className="project-item"
+        className="project-item fade-in"
         key={project.id}
         onClick={() => onProjectSelect(project)}
       >

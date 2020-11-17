@@ -24,7 +24,7 @@ const Resume = () => {
   })
 
   return (
-    <section className="resume">
+    <section className="resume fade-in">
       {renderedResume}
     </section>
   )

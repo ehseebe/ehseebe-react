@@ -26,7 +26,7 @@ const PrintList = () => {
   })
 
   return (
-    <section className="prints">
+    <section className="prints fade-in">
     {renderedList}
     </section>
   )
