@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import './Prints.css';
 
 const PrintItem = ({ print }) => {
-  const [selectedPrint, setSelectedPrint] = useState(null)
 
   return (
-    <article className="print-item" key={print.id} onClick={() => setSelectedPrint(print)}>
+    <article className="print-item" key={print.id}>
     <a href={print.acf.link ? print.acf.link : null}><figure className="print-item__thumbnail">
       <img src={print.acf.image.sizes.large} />
     </figure>
