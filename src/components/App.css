@@ -4,13 +4,15 @@
   color: #39444A;
 }
 
+html,
 body {
-  /* background-color: black;
-  color: white; */
+  height: 100%;
 }
 
 .app-body {
   width: 100%;
+  flex: 1 0 auto;
+  height: auto;
 }
 
 nav {
@@ -27,15 +29,15 @@ nav {
   width: 30%;
   margin: 0;
   box-sizing: border-box;
-line-height: 1.3em;
+  line-height: 1.3em;
 }
 
 .logo a {
   font-family: giulia,sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 2.5em;
-color: #F43FA5;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5em;
+  color: #F43FA5;
 }
 
 .logo img {
@@ -72,38 +74,61 @@ color: #F43FA5;
   background-color: #949498;
 }
 
+footer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.footer-text {
+  font-size: x-small;
+  font-family: "Poppins", sans-serif;
+  color: #BFBFBF;
+  padding: 3em;
+  padding-top: 1em;
+}
+
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 
-@-webkit-keyframes tracking-in-expand {
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
   0% {
-    letter-spacing: -0.5em;
     opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
   }
   100% {
     opacity: 1;
-    letter-spacing: 2px;
   }
 }
-@keyframes tracking-in-expand {
+@keyframes fade-in {
   0% {
-    letter-spacing: -0.5em;
     opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
   }
   100% {
     opacity: 1;
-    letter-spacing: 2px;
   }
 }
+
 
 @media (max-width: 415px) {
   nav {

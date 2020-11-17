@@ -11,7 +11,7 @@ const App = () => {
     <Router>
       <div className="app-body">
         <nav>
-          <span className="logo tracking-in-expand">
+          <span className="logo">
             <Link to="/">
               alyssa <br/>
               beaton <br/>
@@ -51,6 +51,25 @@ const App = () => {
           </Route>
         </Switch>
       </div>
+      <footer>
+      <div className="social-icons">
+        <div className="icon">
+          <a href="https://www.github.com/ehseebe" target="_blank">
+            <img src="/images/footer/github.png" />
+          </a>
+        </div>
+
+        <div className="icon">
+          <a
+            href="https://www.linkedin.com/in/alyssa-beaton-tanguay-51a057138/"
+            target="_blank"
+          >
+            <img src="/images/footer/linkedin.png" />
+          </a>
+        </div>
+      </div>
+      <div className="footer-text">Alyssa Beaton Tanguay 2020</div>
+      </footer>
     </Router>
   );
 };
