@@ -15,12 +15,9 @@ const ProjectList = () => {
       );
       setProjects(response.data);
     };
-    getProjects(setSelectedProject(projects[projects.length - 1])); //sets selected to vagary
-  }, []);
-
-  // console.log("?", selectedProject)
-  // console.log("projects", projects)
-  // console.log("projects in projectlist", projects)
+    getProjects();
+    setSelectedProject(projects[projects.length - 1])//sets selected to vagary
+  }, [projects]);
 
   const renderedList = projects.map((project) => {
     return (
