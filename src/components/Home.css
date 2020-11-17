@@ -1,8 +1,49 @@
 .homepage-photos {
   display: flex;
+  padding-top: 2em;
+  width: 90%;
+  margin: auto;
+  align-items: center;
 }
 
 .photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.25em;
   margin: 0;
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 415px) {
+  .homepage-photos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .photo-container {
+    padding: 0;
+    margin: 0.25em;
+  }
 }

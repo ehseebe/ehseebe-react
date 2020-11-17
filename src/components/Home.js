@@ -20,7 +20,7 @@ const Home = () => {
   const renderedPhotos = photos.map((photo) => {
     return (
       <figure className="photo-container" key={photo.id}>
-        <img src={photo.acf.photo} alt={photo.title.rendered} />
+        <img className="fade-in" src={photo.acf.photo} alt={photo.title.rendered} />
       </figure>
     );
   });
