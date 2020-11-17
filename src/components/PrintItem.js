@@ -6,11 +6,12 @@ const PrintItem = ({ print }) => {
 
   return (
     <article className="print-item" key={print.id} onClick={() => setSelectedPrint(print)}>
-    <figure className="print-item__thumbnail">
+    <a href={print.acf.link ? print.acf.link : null}><figure className="print-item__thumbnail">
       <img src={print.acf.image.sizes.large} />
     </figure>
     <p className="print-item__description">
     {print.acf.description}</p>
+    </a>
   </article>
   )
 }
