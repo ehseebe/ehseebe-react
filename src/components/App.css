@@ -107,15 +107,13 @@ nav {
 .scrollTop {
   position: fixed; 
   width: 100%;
-  bottom: 20px;
-  align-items: center;
-  height: 20px;
-  justify-content: center;
+  bottom: 2em;
+  left: 1em;
   z-index: 1000;
   cursor: pointer;
   animation: arrowFadeIn 0.3s;
   transition: opacity 0.4s;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .scrollTop:hover{
