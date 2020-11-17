@@ -18,7 +18,7 @@
 }
 
 .print-item :hover {
-  opacity: 0.33;
+  opacity: 0.50;
 }
 
 .print-item__thumbnail {
@@ -28,21 +28,21 @@
   margin: 0;
 }
 
+.print-item__description {
+  display: none;
+}
+
 .print-item :hover + .print-item__description {
   display: block;
   position: absolute;
   top: 0;
-  color:#39444A;
+  color: black;
   padding: 1em 2em 1em 2em;
 }
 
 .print-item__thumbnail img {
   width: 100%;
   filter: drop-shadow(.25em .25em 0.5rem lightgrey);
-}
-
-.print-item__description {
-  display: none;
 }
 
 @media (max-width: 415px) {
