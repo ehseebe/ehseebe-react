@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ScrollArrow from './ScrollArrow';
 import ProjectList from "./ProjectList";
 import PrintList from "./PrintList";
 import Resume from "./Resume";
@@ -68,6 +69,7 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
+        <ScrollArrow />
       </div>
       <footer className="footer">
       </footer>

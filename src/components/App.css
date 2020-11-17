@@ -7,6 +7,7 @@
 html,
 body {
   height: 100%;
+  padding: 1em;
 }
 
 .app-body {
@@ -20,9 +21,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   max-height: 15vh;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1em;
 }
 
 .logo {
@@ -30,6 +28,7 @@ nav {
   margin: 0;
   box-sizing: border-box;
   line-height: 1.3em;
+  padding-left: 1em;
 }
 
 .logo a {
@@ -104,20 +103,32 @@ nav {
   width: 5em;
 }
 
-.icon :active,
-.icon :hover {
-
-}
-
-.footer-text {
-  font-size: small;
-  padding: 3em;
-  padding-top: 1em;
-}
-
-.footer-text p {
-  display: flex;
+/* scroll to top arrow, CSS and component by Matthew Croak https://medium.com/better-programming/create-a-scroll-to-top-arrow-using-react-hooks-18586890fedc */
+.scrollTop {
+  position: fixed; 
+  width: 100%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
   justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: arrowFadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes arrowFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 .tracking-in-expand {
