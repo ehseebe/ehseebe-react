@@ -74,7 +74,7 @@ nav {
   background-color: #949498;
 }
 
-footer {
+.footer {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -85,20 +85,25 @@ footer {
 
 .social-icons{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  width: 50%;
 }
 
 .icon {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 20%;
 }
 
 .footer-text {
   font-size: x-small;
-  font-family: "Poppins", sans-serif;
-  color: #BFBFBF;
   padding: 3em;
   padding-top: 1em;
+}
+
+.footer-text p {
+  display: flex;
+  justify-content: center;
 }
 
 .tracking-in-expand {

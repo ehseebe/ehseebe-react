@@ -51,7 +51,7 @@ const App = () => {
           </Route>
         </Switch>
       </div>
-      <footer>
+      <footer className="footer">
       <div className="social-icons">
         <div className="icon">
           <a href="https://www.github.com/ehseebe" target="_blank">
@@ -68,7 +68,9 @@ const App = () => {
           </a>
         </div>
       </div>
-      <div className="footer-text">Alyssa Beaton Tanguay 2020</div>
+      <div className="footer-text">
+        <p>Alyssa Beaton Tanguay 2020</p>
+        </div>
       </footer>
     </Router>
   );
