@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ProjectDetail from "./ProjectDetail";
 import ProjectItem from "./ProjectItem";
-import './Projects.css';
+import "./Projects.css";
 
 const ProjectList = () => {
   const [projects, setProjects] = useState([]);
@@ -15,13 +15,11 @@ const ProjectList = () => {
       );
       setProjects(response.data);
     };
-  
+
     getProjects();
-    
-    setSelectedProject(projects[projects.length - 1])//sets selected to vagary
+
+    setSelectedProject(projects[projects.length - 1]); // *** not working *** sets selected to vagary
   }, []);
-
-
 
   const renderedList = projects.map((project) => {
     return (
@@ -33,12 +31,11 @@ const ProjectList = () => {
       />
     );
   });
+  
   return (
     <section className="projects">
-    <ProjectDetail project={selectedProject} />
-    <aside className="project-list">
-      {renderedList}
-    </aside>
+      <ProjectDetail project={selectedProject} />
+      <aside className="project-list">{renderedList}</aside>
     </section>
   );
 };

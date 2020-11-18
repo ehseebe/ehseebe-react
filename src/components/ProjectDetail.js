@@ -16,14 +16,23 @@ const ProjectDetail = ({ project }) => {
   return (
     <article className="project-detail" id="project-detail">
       <figure className="project-detail__screenshot fade-in">
-        <img src={project.acf.screenshot.sizes.large} alt={project.acf.description}/>
+        <img
+          src={project.acf.screenshot.sizes.large}
+          alt={project.acf.description}
+        />
       </figure>
       <div className="project-detail__content">
         <header className="project-detail__content-header">
-        <h1>
-          {project.title.rendered}
-        </h1>
-        <form method="GET" action={project.acf.link} className="project-detail__link"><button className="ui grey basic button" type="submit">Check it out</button></form>
+          <h1>{project.title.rendered}</h1>
+          <form
+            method="GET"
+            action={project.acf.link}
+            className="project-detail__link"
+          >
+            <button className="ui grey basic button" type="submit">
+              Check it out
+            </button>
+          </form>
         </header>
         <p className="project-detail__description">{project.acf.description}</p>
         <h4>Tools</h4>

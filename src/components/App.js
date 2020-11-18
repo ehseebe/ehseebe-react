@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ScrollArrow from './ScrollArrow';
+import ScrollArrow from "./ScrollArrow";
 import ProjectList from "./ProjectList";
 import PrintList from "./PrintList";
 import Resume from "./Resume";
@@ -14,46 +14,40 @@ const App = () => {
         <nav>
           <span className="logo">
             <Link to="/">
-              alyssa <br/>
-              beaton <br/>
-              tanguay <br/>
+              alyssa <br />
+              beaton <br />
+              tanguay <br />
             </Link>
           </span>
-          <span className="right-side">
-          <ul className="nav-items">
-            <li className="nav-item">
-              <Link to="/resume">
-                resume
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/projects">
-                projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/print">
-                print
-              </Link>
-            </li>
-          </ul>
-          <div className="social-icons">
-        <div className="icon">
-          <a href="https://www.github.com/ehseebe" target="_blank">
-            <img src="/images/footer/github.png" />
-          </a>
-        </div>
+          <span className="nav-right-side">
+            <ul className="nav-items">
+              <li className="nav-item">
+                <Link to="/resume">resume</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/projects">projects</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/print">print</Link>
+              </li>
+            </ul>
+            <div className="social-icons">
+              <div className="icon">
+                <a href="https://www.github.com/ehseebe" target="_blank">
+                  <img src="/images/nav/github.png" />
+                </a>
+              </div>
 
-        <div className="icon">
-          <a
-            href="https://www.linkedin.com/in/alyssa-beaton-tanguay-51a057138/"
-            target="_blank"
-          >
-            <img src="/images/footer/linkedin.png" />
-          </a>
-        </div>
-      </div>
-      </span>
+              <div className="icon">
+                <a
+                  href="https://www.linkedin.com/in/alyssa-beaton-tanguay-51a057138/"
+                  target="_blank"
+                >
+                  <img src="/images/nav/linkedin.png" />
+                </a>
+              </div>
+            </div>
+          </span>
         </nav>
         <Switch>
           <Route path="/projects">
@@ -71,8 +65,7 @@ const App = () => {
         </Switch>
         <ScrollArrow />
       </div>
-      <footer className="footer">
-      </footer>
+      <footer className="footer"></footer>
     </Router>
   );
 };
