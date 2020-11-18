@@ -75,10 +75,10 @@ nav {
   justify-content: flex-end;
 }
 
-.nav-item :hover ,
-.nav-item :active {
-  background-color: #F43FA5;
-  color: white;
+.nav-item:hover,
+.nav-item:active {
+  background-color: #EEEEEE;
+  border-radius: 25px;
 }
 
 .footer {

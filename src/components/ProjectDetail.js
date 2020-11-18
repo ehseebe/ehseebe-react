@@ -4,11 +4,7 @@ import "./Projects.css";
 const ProjectDetail = ({ project }) => {
   if (!project) {
     return (
-      <div className="ui segment project-detail">
-        <div className="ui active inverted dimmer">
-          <div className="ui text loader">Loading</div>
-        </div>
-        <p></p>
+      <div className="project-detail">
       </div>
     );
   }

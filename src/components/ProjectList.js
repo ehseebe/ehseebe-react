@@ -8,17 +8,16 @@ const ProjectList = () => {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
 
+  const getProjects = async () => {
+    const response = await axios.get(
+      "http://localhost:10013/wp-json/wp/v2/project"
+    );
+    setProjects(response.data)
+    setSelectedProject(response.data[response.data.length - 1]); //sets default to vagary
+  };
+
   useEffect(() => {
-    const getProjects = async () => {
-      const response = await axios.get(
-        "http://localhost:10013/wp-json/wp/v2/project"
-      );
-      setProjects(response.data);
-    };
-
     getProjects();
-
-    setSelectedProject(projects[projects.length - 1]); // *** not working *** sets selected to vagary
   }, []);
 
   const renderedList = projects.map((project) => {
