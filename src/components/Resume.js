@@ -16,7 +16,6 @@ const Resume = () => {
   }, []);
 
   const renderedResume = resume.map((cv) => {
-    console.log(cv);
     return (
       <figure className="resume-img" key={cv.id} alt={cv.title.rendered}>
         <img src={cv.acf.resume.url} alt={cv.title.rendered}/>

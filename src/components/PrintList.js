@@ -14,8 +14,6 @@ const PrintList = () => {
     getPrints();
   }, [])
 
-  console.log(prints)
-
   const renderedList = prints.map(print => {
     return (
       <PrintItem
