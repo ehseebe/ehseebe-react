@@ -17,8 +17,8 @@ const ProjectItem = ({ project, onProjectSelect }) => {
       key={project.id}
       onClick={onClickHandler}
     >
-      <figure className="project-item__thumbnail">
-        <img className="ui-image" src={project.acf.screenshot.sizes.medium} />
+      <figure className="project-item__thumbnail" alt={project.title.rendered}>
+        <img className="ui-image" src={project.acf.screenshot.sizes.medium} alt={project.title.rendered}/>
       </figure>
     </article>
   );

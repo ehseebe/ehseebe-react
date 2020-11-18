@@ -33,8 +33,8 @@ const App = () => {
             </ul>
             <div className="social-icons">
               <div className="icon">
-                <a href="https://www.github.com/ehseebe" target="_blank">
-                  <img src="/images/nav/github.png" />
+                <a href="https://www.github.com/ehseebe" target="_blank" rel="noreferrer">
+                  <img src="/images/nav/github.png" alt="github social icon"/>
                 </a>
               </div>
 
@@ -42,8 +42,9 @@ const App = () => {
                 <a
                   href="https://www.linkedin.com/in/alyssa-beaton-tanguay-51a057138/"
                   target="_blank"
+                  rel="noreferrer"
                 >
-                  <img src="/images/nav/linkedin.png" />
+                  <img src="/images/nav/linkedin.png" alt="linkedin social icon" />
                 </a>
               </div>
             </div>
