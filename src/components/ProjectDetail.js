@@ -31,7 +31,7 @@ const ProjectDetail = ({ project }) => {
           </form>
         </header>
         <p className="project-detail__description">{project.acf.description}</p>
-        <h4>Tools</h4>
+        <h2>Tools</h2>
         <p className="project-detail__description">{project.acf.stack}</p>
       </div>
     </article>
