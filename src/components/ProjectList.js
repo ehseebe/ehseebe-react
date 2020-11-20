@@ -10,7 +10,7 @@ const ProjectList = () => {
 
   const getProjects = async () => {
     const response = await axios.get(
-      "http://ehseebe.ca/wp-json/wp/v2/project"
+      "https://ehseebe.ca/wp-json/wp/v2/project"
     );
     setProjects(response.data)
     setSelectedProject(response.data[response.data.length - 1]); //sets default to vagary
