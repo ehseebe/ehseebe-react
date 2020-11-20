@@ -8,7 +8,7 @@ const Resume = () => {
   useEffect(() => {
     const getResume = async () => {
       const response = await axios.get(
-        "http://localhost:10013/wp-json/wp/v2/resume"
+        "http://ehseebe.ca/wp-json/wp/v2/resume"
       );
       setResume(response.data);
     };

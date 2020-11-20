@@ -8,7 +8,7 @@ const PrintList = () => {
 
   useEffect(() => {
     const getPrints = async () => {
-      const response = await axios.get("http://localhost:10013/wp-json/wp/v2/print")
+      const response = await axios.get("http://ehseebe.ca/wp-json/wp/v2/print")
       setPrints(response.data)
     }
     getPrints();
