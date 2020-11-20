@@ -22,7 +22,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   max-height: 15vh;
-  width: 100%;
+  width: 100vh;
 }
 
 .logo {
@@ -30,7 +30,6 @@ nav {
   margin: 0;
   box-sizing: border-box;
   line-height: 1.3em;
-  padding-left: 1em;
 }
 
 .logo a {
