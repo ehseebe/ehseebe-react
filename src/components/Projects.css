@@ -1,6 +1,6 @@
 .projects {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
   padding: 2em 0;
   width: 100%;
   max-width: 900px;
@@ -40,27 +40,34 @@
   flex-direction: column;
   align-items: center;
   width: 70%;
-  padding-left: 1em;
+  padding: 2em;
   height: auto;
+  border-radius: 25px;
+  background-color: whitesmoke;
+  background-image: url(concrete-wall.png);
+  filter: drop-shadow(.25em .25em 0.5rem lightgrey);
 }
 
 .project-detail__screenshot {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.25em;
+  margin: auto;
   box-sizing: border-box;
 }
 
 .project-detail__screenshot img {
   width: 100%;
+  border-radius: 25px;
   filter: drop-shadow(.25em .25em 0.5rem lightgrey);
 }
 
 .project-detail__content {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin: 1em 1em 0 1em;
+  padding: 1em 1.5em;
+  border-radius: 25px;
+  background-color: white;
+  filter: drop-shadow(.25em .25em 0.5rem lightgrey);
 }
 
 .project-detail__content-header {
@@ -77,10 +84,6 @@ h2 {
   color: #5784D9;
 }
 
-.project-detail__description {
-  padding-left: 0.5em;
-}
-
 .project-detail__link {
   width: 15em;
 }
@@ -95,9 +98,12 @@ h2 {
     width: 100%;
   }
   .project-detail {
-    width: 90%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    margin: 2em 0;
+  }
+  .project-detail__content-header {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
