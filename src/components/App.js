@@ -10,13 +10,12 @@ import "./App.css";
 const App = () => {
   return (
     <Router>
-      <div className="app-body">
         <nav>
           <span className="logo">
             <Link to="/">
-              alyssa <br />
-              beaton <br />
-              tanguay <br />
+              <div className="logo-alyssa">alyssa</div>
+              <div className="logo-beaton">beaton</div>
+              <div className="logo-tanguay">tanguay</div>
             </Link>
           </span>
           <span className="nav-right-side">
@@ -65,7 +64,6 @@ const App = () => {
           </Route>
         </Switch>
         <ScrollArrow />
-      </div>
       <footer className="footer"></footer>
     </Router>
   );
