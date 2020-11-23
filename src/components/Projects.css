@@ -26,7 +26,7 @@
 
 .project-item__thumbnail img {
   width: 100%;
-  height: auto;
+  height: 100%;
   filter: drop-shadow(.25em .25em 0.5rem lightgrey);
 }
 
@@ -56,6 +56,7 @@
 
 .project-detail__screenshot img {
   width: 100%;
+  height: 100%;
   border-radius: 25px;
   filter: drop-shadow(.25em .25em 0.5rem lightgrey);
 }
