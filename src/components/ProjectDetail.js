@@ -25,7 +25,7 @@ const ProjectDetail = ({ project }) => {
             action={project.acf.link}
             className="project-detail__link"
           >
-            <button className="ui inverted pink button" type="submit" data-message="click to see the project code, or live site">
+            <button className="ui inverted secondary button" type="submit" data-message="click to see the project code, or live site">
               Check it out
             </button>
           </form>

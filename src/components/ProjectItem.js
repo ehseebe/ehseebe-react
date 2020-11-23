@@ -3,7 +3,7 @@ import "./Projects.css";
 
 const ProjectItem = ({ project, onProjectSelect }) => {
   const scrollTop = () => {
-    window.scrollTo({ top: 20, behavior: "smooth" });
+    window.scrollTo({ top: 40, behavior: "smooth" });
   };
 
   const onClickHandler = () => {
