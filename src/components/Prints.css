@@ -4,7 +4,9 @@
   align-items: space-between;
   justify-content: center;
   width: 100%;
-  padding-top: 2em;
+  padding: 2em 0;
+  max-width: 900px;
+  margin: auto;
 }
 
 .print-item {

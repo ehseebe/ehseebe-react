@@ -17,9 +17,9 @@ const Resume = () => {
 
   const renderedResume = resume.map((cv) => {
     return (
-      <figure className="resume-img" key={cv.id} alt={cv.title.rendered}>
+      <article className="resume-img" key={cv.id} alt={cv.title.rendered}>
         <img src={cv.acf.resume.url} alt={cv.title.rendered}/>
-      </figure>
+      </article>
     );
   });
 

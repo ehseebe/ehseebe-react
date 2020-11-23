@@ -32,10 +32,12 @@ const ProjectList = () => {
   });
   
   return (
+    <main>
     <section className="projects">
       <ProjectDetail project={selectedProject} />
       <aside className="project-list">{renderedList}</aside>
     </section>
+    </main>
   );
 };
 

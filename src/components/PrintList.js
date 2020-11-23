@@ -24,9 +24,11 @@ const PrintList = () => {
   })
 
   return (
+    <main>
     <section className="prints fade-in">
     {renderedList}
     </section>
+    </main>
   )
 }
 
